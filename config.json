@@ -1,0 +1,15 @@
+{
+  "id_col": "customer_id",
+  "target_col": "churned",
+  "numeric_features": ["watch_hours", "avg_watch_time_per_day", "last_login_days", "monthly_fee", "age"],
+  "categorical_features": [],
+  "feature_columns": ["watch_hours", "avg_watch_time_per_day", "last_login_days", "monthly_fee", "age"],
+  "cluster_cols": ["last_login_days", "watch_hours", "monthly_fee"],
+  "n_clusters": 4,
+  "artifacts": {
+    "rf": "artifacts/model_rf.pkl",
+    "kmeans": "artifacts/cluster_kmeans.pkl",
+    "scaler": "artifacts/scaler.pkl",
+    "cluster_scaler": "artifacts/cluster_scaler.pkl"
+  }
+}
